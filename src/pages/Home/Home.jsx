@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import {fetchNews} from '../../Services/NewsApi'
+import NewsList from '../../components/NewsList/NewsList';
 
 
 const Home =()=>{
-    const {news, setNews} = useState([]);
+    const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const getNews = async () => {
@@ -13,14 +14,17 @@ const Home =()=>{
         };
     
         getNews();
+        
       }, []);
-
+      console.log(news)
+      
     if (loading) {
         return <div>Cargando noticias...</div>;
       }
+
     return(
         <>
-            <p>Hello World!</p>
+            <NewsList news={news}/>
         </>
 
     )
