@@ -5,12 +5,12 @@ const NewsItem = ({article})=>{
     console.log(article)
     return(
         <div className="newsItem">
-            <div className="newsCard">
+           {urlToImage &&<div className="newsCard">
                 <h2>{title}</h2>
                 <h5>{author}</h5>
-                {urlToImage && <img src={urlToImage} alt="news image" />}
+                <img src={urlToImage} alt="news image" />
                 <p>{description}</p>
-            </div>
+            </div>} 
         </div>
     )
 };
