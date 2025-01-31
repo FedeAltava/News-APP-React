@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./NewsItem.css";
 const NewsItem = ({article})=>{
     const { author, description, title ,urlToImage } = article;
-    console.log(article)
+
     return(
         <div className="newsItem">
            {urlToImage &&<div className="newsCard">

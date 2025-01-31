@@ -23,4 +23,16 @@
   .nav a:hover {
     color: rgb(98, 167, 227);
   }
-  
+  .category-trigger {
+    cursor: pointer; /* Cambia el icono del cursor a una mano */
+}
+  .category-trigger:hover{
+    color: red;
+  }
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 1rem;
+}
+
