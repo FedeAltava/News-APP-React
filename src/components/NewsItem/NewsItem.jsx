@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-const NewsItem = ({index, article})=>{
-    console.log(article)
+const NewsItem = ({article})=>{
+    const {author, description, title ,urlImage} = article;
     return(
         <div className="newsItem">
             <div className="newsCard">
-                <h1>Titulo</h1>
-                <h5>Autor</h5>
-                <img src="" alt="" />
-                <p>Descripcion</p>
+                <h1>{title}</h1>
+                <h5>{author}</h5>
+                {urlImage && <img src={urlImage} alt="news image" />}
+                <p>{description}</p>
             </div>
         </div>
     )
@@ -15,6 +15,5 @@ const NewsItem = ({index, article})=>{
 
 NewsItem.propTypes = {
     article: PropTypes.object.isRequired,
-    index: PropTypes.number.isRequired
   };
 export default NewsItem;

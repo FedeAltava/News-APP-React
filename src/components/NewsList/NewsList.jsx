@@ -4,7 +4,7 @@ const NewsList = ({ news }) => {
   return (
     <div>
       {news.map((article, index) => (
-        <NewsItem key={index} index={index} article={article}/>
+        <NewsItem key={index} article={article}/>
       ))}
     </div>
   );
