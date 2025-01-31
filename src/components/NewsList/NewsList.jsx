@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 const NewsList = ({ news }) => {
   return (
     <div>
-      {news.map((article, index) => {
-        <NewsItem key={index} article={article}/>;
-      })}
+      {news.map((article, index) => (
+        <NewsItem key={index} index={index} article={article}/>
+      ))}
     </div>
   );
 };

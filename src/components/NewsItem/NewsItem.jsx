@@ -1,4 +1,6 @@
-const NewsItem = ()=>{
+import PropTypes from "prop-types";
+const NewsItem = ({index, article})=>{
+    console.log(article)
     return(
         <div className="newsItem">
             <div className="newsCard">
@@ -9,6 +11,10 @@ const NewsItem = ()=>{
             </div>
         </div>
     )
-}
+};
 
+NewsItem.propTypes = {
+    article: PropTypes.object.isRequired,
+    index: PropTypes.number.isRequired
+  };
 export default NewsItem;

@@ -16,7 +16,7 @@ const Home =()=>{
         getNews();
         
       }, []);
-      console.log(news)
+      //console.log(news)
       
     if (loading) {
         return <div>Cargando noticias...</div>;
