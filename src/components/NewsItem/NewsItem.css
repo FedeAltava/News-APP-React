@@ -1,0 +1,50 @@
+/* Contenedor principal de la tarjeta */
+.newsItem {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  /* Estilos para la tarjeta */
+  .newsCard {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo de la tarjeta */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+
+  /* Estilos para el título */
+  .newsCard h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  
+  /* Estilos para el autor */
+  .newsCard h5 {
+    font-size: 1rem;
+    margin: 5px 10px;
+    text-align: center;
+    color: #555;
+  }
+  
+  /* Estilos para la imagen */
+/*   .newsImage {
+    width: 100%; 
+    height: 100px; 
+    object-fit: cover; 
+    display: block;
+  } */
+  
+  /* Estilos para la descripción */
+  .newsCard p {
+    font-size: 1rem;
+    margin: 10px;
+    text-align: justify;
+    color: #333;
+  }

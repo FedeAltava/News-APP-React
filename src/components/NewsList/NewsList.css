@@ -1,0 +1,9 @@
+.newsList h1{
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    text-transform: uppercase;
+}
