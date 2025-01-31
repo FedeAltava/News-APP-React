@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 const NewsItem = ({article})=>{
-    const {author, description, title ,urlImage} = article;
+    const { author, description, title ,urlToImage } = article;
+    console.log(article)
     return(
         <div className="newsItem">
             <div className="newsCard">
                 <h1>{title}</h1>
                 <h5>{author}</h5>
-                {urlImage && <img src={urlImage} alt="news image" />}
+                {urlToImage && <img src={urlToImage} alt="news image" />}
                 <p>{description}</p>
             </div>
         </div>
