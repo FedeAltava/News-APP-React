@@ -27,7 +27,7 @@
     cursor: pointer; /* Cambia el icono del cursor a una mano */
 }
   .category-trigger:hover{
-    color: red;
+    color: yellow;
   }
   .dropdown {
     display: flex;
