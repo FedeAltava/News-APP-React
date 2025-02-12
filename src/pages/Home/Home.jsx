@@ -1,26 +1,9 @@
-import { useState, useEffect } from 'react';
-import {fetchNews} from '../../Services/NewsApi'
+
 import NewsList from '../../components/NewsList/NewsList';
+import PropTypes from "prop-types";
 
-
-const Home =()=>{
-    const [news, setNews] = useState([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-        const getNews = async () => {
-          const articles = await fetchNews();
-          setNews(articles);
-          setLoading(false);
-        };
-    
-        getNews();
-        
-      }, []);
-      //console.log(news)
-      
-    if (loading) {
-        return <div>Cargando noticias...</div>;
-      }
+const Home =({news})=>{
+  
 
     return(
         <>
@@ -29,5 +12,7 @@ const Home =()=>{
 
     )
 }
-
+Home.propTypes = {
+  news: PropTypes.array,
+};
 export default Home;
