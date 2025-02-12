@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import "./NewsList.css"
 const NewsList = ({ news }) => {
   return (
-    <div className="newsList">
-      <h1>Your News</h1>
+    
+    <div className="newsList">   
       {news.map((article, index) => (
-        <NewsItem key={index} article={article}/>
+        <NewsItem key={index} article={article} id={index}/>
       ))}
     </div>
   );
