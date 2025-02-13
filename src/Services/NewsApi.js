@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = 'eda15dc73d78452783019e2dbfb9f410'; // Tu API Key
+const API_KEY = 'eda15dc73d78452783019e2dbfb9f410'; // API Key
 const BASE_URL = 'https://newsapi.org/v2/everything';
 
 export const fetchNews = async (query = 'Apple', from = '2025-01-30', sortBy = 'popularity') => {

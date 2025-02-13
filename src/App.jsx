@@ -7,7 +7,9 @@ import Home from './pages/Home/Home'
 import NewsDetail from './pages/NewsDetail/NewsDetail'
 import {  Routes, Route } from "react-router-dom";
 function App() {
+
   const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     const getNews = async () => {
       try {
@@ -19,12 +21,13 @@ function App() {
     };
     getNews();
   }, []);
+
   return (
     <>
     <NavBar />
     <Routes>
       <Route path="/" element={<Home news={articles}/>}/>
-      <Route path="/Category/:id" element={<Category />}/>
+      <Route path="/Category/:categorysName" element={<Category />}/>
       <Route path="/NewsDetail/:newsId" element={<NewsDetail articles ={articles}/>}/>
       <Route path="*" element={<Home />}/>
     </Routes>
