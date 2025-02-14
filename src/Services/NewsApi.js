@@ -8,9 +8,9 @@ export const fetchNews = async (query = 'Apple', from = '2025-01-30', sortBy = '
 
   try {
     const response = await axios.get(url);
-    return response.data.articles; // Retorna solo los artículos
+    return response.data.articles; 
   } catch (error) {
     console.error('Error en la petición:', error);
-    return []; // Retorna un array vacío en caso de error
+    return [];
   }
 };
