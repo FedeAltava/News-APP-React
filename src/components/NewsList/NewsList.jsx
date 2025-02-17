@@ -7,6 +7,7 @@ const NewsList = ({ news }) => {
     <div className="newsList">   
       {news.map((article, index) => (
         <NewsItem key={index} article={article} id={index}/>
+        
       ))}
     </div>
   );

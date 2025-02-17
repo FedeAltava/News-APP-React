@@ -3,7 +3,7 @@ import "./NewsItem.css";
 import { Link } from "react-router-dom";
 const NewsItem = ({ article }) => {
   const { author, description, title, urlToImage } = article;
-
+  console.log(article);
   return (
     <div className="newsItem">
       {urlToImage && (

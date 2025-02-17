@@ -13,6 +13,7 @@
   cursor: pointer;
   margin-bottom: 10px;
   min-height: 337px;
+  max-height: 535px;
 }
 
 .newsCard:hover {

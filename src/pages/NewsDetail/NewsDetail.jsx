@@ -2,9 +2,10 @@ import PropTypes from "prop-types";
 import { useParams } from "react-router-dom";
 const NewsDetail = ({ articles }) => {
   const { newsId } = useParams();
-  if (!Array.isArray(articles)) {
+  if (!Array.isArray(articles)|| articles.length === 0) {
     return <div>Cargando...</div>;
   }
+  console.log(articles);
   const article = articles.find((item) => item.title === newsId);
   const { author, description, title, urlToImage, publishedAt, content } =
     article;
