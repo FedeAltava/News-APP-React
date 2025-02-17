@@ -7,7 +7,7 @@
     list-style-type: none; 
     padding: 0 0 0 10px; 
     display: flex;
-    font-family: 'UnifrakturMaguntia', cursive; 
+   
   }
   
   .nav li {
@@ -27,7 +27,7 @@
     cursor: pointer; /* Cambia el icono del cursor a una mano */
 }
   .category-trigger:hover{
-    color: yellow;
+    color: rgb(0, 200, 255);
   }
   .dropdown {
     display: flex;
